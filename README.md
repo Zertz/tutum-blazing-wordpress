@@ -6,7 +6,7 @@ This is a blazing fast WordPress stack for [Tutum](https://www.tutum.co/).
 
 ### Permissions
 
-If WordPress asks for FTP credentials or is otherwise unhappy with permissions. run the following command on the Docker host.
+If WordPress asks for FTP credentials or is otherwise unhappy with permissions. run the following command on the Docker host. (Credit: [@md5](https://github.com/docker-library/wordpress/issues/24#issuecomment-63256094))
 
 ```sh
 docker exec CONTAINER_NAME chown -R www-data:www-data /var/www/html
