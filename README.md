@@ -19,6 +19,8 @@ If WordPress asks for FTP credentials or is otherwise unhappy with permissions, 
 docker exec CONTAINER_NAME chown -R www-data:www-data /var/www/html
 ```
 
+Alternatively, I published a WordPress image on [Docker Hub](https://hub.docker.com/r/zertz/docker-wordpress-extras/) from `wordpress:4.3-apache` that solves this issue and adds `mbstring` for WPML.
+
 ### Availability
 
 This stack provides zero fault tolerance. While haproxy and Varnish can easily be scaled to multiple containers,
